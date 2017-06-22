@@ -2,7 +2,7 @@ import sys, getopt
 import csv
 import json
 
-def main(argv):
+def main():
     input_file = 'file.csv'
     output_file = 'file.json'
     format = 'pretty'
