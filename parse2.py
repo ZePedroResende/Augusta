@@ -1,3 +1,4 @@
+#!/bin/python
 import sys, getopt
 import csv
 import json
@@ -20,9 +21,33 @@ def read_csv(file, json_file, format):
 def write_json(data, json_file, format):
     with open(json_file, "w") as f:
         if format == "pretty":
-            f.write(json.dumps(data, sort_keys=False, indent=4, separators=(',', ': '),encoding="utf-8",ensure_ascii=False))
+            data = rem(data)
+            j = json.dumps(data,sort_keys=False, indent=4, separators=(',', ': '),encoding="utf-8",ensure_ascii=False)
+            f.write(j)
         else:
             f.write(json.dumps(data))
+
+def rem(data):
+    newList= []
+    for d in data :
+        for i in xrange(len(d)):
+            if d.values()[i] == "":
+                break
+            else:
+                if(i+1 == (len(d))):
+                    newList.append(d) 
+                else:
+                    continue
+    return newList
+ #return [d for d in data if d.values()[0] != ""] 
+    
+def remove_invalid(json):
+    for i in xrange(len(json)):
+            print(json[0])
+            if json[0] == "":
+                json.pop(i)
+                break
+    return json
 
 if __name__ == "__main__":
    main()
