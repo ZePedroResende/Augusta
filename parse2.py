@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/python
 import sys, getopt
 import csv
 import json

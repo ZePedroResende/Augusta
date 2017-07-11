@@ -1,13 +1,27 @@
-{"Data Inicio": "", "NValores": "", "Parametro": "", "Unidade": "", "Data Final": "", "Estacao": ""}
-{"Data Inicio": "", "NValores": "", "Parametro": "Hidrom\ufffdtrica", "Unidade": "", "Data Final": "", "Estacao": "REDE:"}
-{"Data Inicio": "", "NValores": "", "Parametro": "", "Unidade": "", "Data Final": "", "Estacao": ""}
-{"Data Inicio": "Data In\ufffdcio", "NValores": "N.\ufffd Valores", "Parametro": "Par\ufffdmetro", "Unidade": "Unidade", "Data Final": "Data Final", "Estacao": "Esta\ufffd\ufffdo"}
-{"Data Inicio": "25/04/1961", "NValores": "16", "Parametro": "Caudal instant\ufffdneo m\ufffdximo anual (convencional)", "Unidade": "m3/s", "Data Final": "06/03/1989", "Estacao": "PONTILH\ufffdO DE CELEIROS (02G/01H)"}
-{"Data Inicio": "19/10/1959", "NValores": "9287", "Parametro": "Caudal m\ufffddio di\ufffdrio (convencional)", "Unidade": "m3/s", "Data Final": "30/09/1990", "Estacao": "PONTILH\ufffdO DE CELEIROS (02G/01H)"}
-{"Data Inicio": "01/10/1959", "NValores": "268", "Parametro": "Escoamento mensal (convencional)", "Unidade": "dam3", "Data Final": "01/09/1990", "Estacao": "PONTILH\ufffdO DE CELEIROS (02G/01H)"}
-{"Data Inicio": "30/12/1899", "NValores": "129134", "Parametro": "N\ufffdvel hidrom\ufffdtrico Instant\ufffdneo", "Unidade": "m", "Data Final": "19/06/2017", "Estacao": "PONTILH\ufffdO DE CELEIROS (02G/01H)"}
-{"Data Inicio": "09/02/1979", "NValores": "5", "Parametro": "N\ufffdvel instant\ufffdneo m\ufffdximo anual (convencional)", "Unidade": "m", "Data Final": "06/03/1989", "Estacao": "PONTILH\ufffdO DE CELEIROS (02G/01H)"}
-{"Data Inicio": "01/01/1960", "NValores": "9296", "Parametro": "N\ufffdvel m\ufffddio di\ufffdrio (convencional)", "Unidade": "m", "Data Final": "30/09/1990", "Estacao": "PONTILH\ufffdO DE CELEIROS (02G/01H)"}
-{"Data Inicio": "", "NValores": "", "Parametro": "", "Unidade": "", "Data Final": "", "Estacao": ""}
-{"Data Inicio": "", "NValores": "", "Parametro": "", "Unidade": "", "Data Final": "", "Estacao": ""}
-{"Data Inicio": "", "NValores": "", "Parametro": "", "Unidade": "", "Data Final": "", "Estacao": "Dados obtidos atrav\ufffds do site http://snirh.apambiente.pt em 21/06/2017 16:31"}
+[
+    {
+        "temperatura": "20",
+        "ph": "11",
+        "oxigenio dissolvido": "10"
+    },
+    {
+        "temperatura": "20",
+        "ph": "12",
+        "oxigenio dissolvido": "10"
+    },
+    {
+        "temperatura": "20",
+        "ph": "13",
+        "oxigenio dissolvido": "10"
+    },
+    {
+        "temperatura": "20",
+        "ph": "1",
+        "oxigenio dissolvido": "10"
+    },
+    {
+        "temperatura": "20",
+        "ph": "10",
+        "oxigenio dissolvido": "10"
+    }
+]

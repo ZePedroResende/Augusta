@@ -1,0 +1,16 @@
+{
+    "ph":{
+        "maximo": "12",
+        "minimo": "2"
+    },
+    "temperatura":{
+        "maximo": "30",
+        "minimo": "-15",
+	"unidade": "C"
+    },
+    "oxigenio dissolvido":{
+        "maximo": "11",
+        "minimo": "9",
+	"unidade": "mg/L"
+    }
+}
