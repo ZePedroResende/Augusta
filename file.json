@@ -1,27 +1,12 @@
 [
     {
         "temperatura": "20",
-        "ph": "11",
-        "oxigenio dissolvido": "10"
-    },
-    {
-        "temperatura": "20",
-        "ph": "12",
-        "oxigenio dissolvido": "10"
-    },
-    {
-        "temperatura": "20",
-        "ph": "13",
-        "oxigenio dissolvido": "10"
-    },
-    {
-        "temperatura": "20",
-        "ph": "1",
-        "oxigenio dissolvido": "10"
-    },
-    {
-        "temperatura": "20",
         "ph": "10",
+        "oxigenio dissolvido": "10"
+    },
+    {
+        "temperatura": "20",
+        "ph": "11",
         "oxigenio dissolvido": "10"
     }
 ]

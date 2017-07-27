@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import sys, getopt
 import csv
+import ast
 import json
 
 def main():
@@ -17,8 +18,22 @@ def read_csv(file, json_file, format):
         for row in reader:
             csv_rows.extend([{title[i]:row[title[i]] for i in range(len(title))}])
         write_json(csv_rows, json_file, format)
+def concatL(a, b):
+	return [j for i in zip(a,b) for j in i]
 
-def write_json(data, json_file, format):
+
+def write_json(data, json_file,format):
+    with open(json_file, "r+") as f:
+	    flist = ast.literal_eval(f.read())
+            data = rem(data)
+	    #data  = concatL(data,flist)
+	    data = data +flist
+            j = json.dumps(data,sort_keys=False, indent=4, separators=(',', ': '),encoding="utf-8",ensure_ascii=False)
+	    f.seek(0)
+	    f.truncate()
+            f.write(j)
+
+def write_json1(data, json_file, format):
     with open(json_file, "w") as f:
         if format == "pretty":
             data = rem(data)

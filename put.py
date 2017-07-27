@@ -26,8 +26,13 @@ def dump(l):
 	normal= db['normal']	
 	teste = db['teste']	
 	quarentena= db['quarentena']	
+	
 	for item in l :
 		if classify(item):
+			with open("log","a") as f:
+				json.dump(item,f)
+				f.write("\n")
+				f.close()
 			normal.insert_one(item)
 		else:
 			quarentena.insert_one(item)
