@@ -1,7 +1,7 @@
 {
     "ph":{
-        "maximo": "12",
-        "minimo": "2"
+        "maximo": "10",
+        "minimo": "4"
     },
     "temperatura":{
         "maximo": "30",

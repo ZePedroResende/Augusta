@@ -6,6 +6,7 @@ import json
 import __builtin__
 from extraString import ExtraString
 __builtin__.dict = ExtraString
+
 class Parse:
     def __init__(self):
         self.data = []
@@ -41,17 +42,19 @@ class Parse:
 
     def testDump(self):
         data = ast.literal_eval(self.data)
-        for item in data:
-            normal = open("normal.log","w")
-            quarentena= open("quarentena.log","w")
-            if item.classify():
+        normal = open("normal.log","w")
+        quarentena= open("quarentena.log","w")
+        try:
+            for item in data:
+                if item.classify():
                     json.dump(item,normal)
                     normal.write("\n")
-                    normal.close()
-            else:
+                else:
                     json.dump(item,quarentena)
                     quarentena.write("\n")
-                    quarentena.close()
+        finally:
+            normal.close()
+            quarentena.close()
 '''
 tem de ser feito com um botao
     def dump(self):
@@ -76,5 +79,5 @@ tem de ser feito com um botao
 def main():
     print("ola")
     p = Parse()
-    p.read_csv("../file1.csv")
+    p.read_csv("../etc/file1.csv")
     p.testDump()
